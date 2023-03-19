@@ -15,7 +15,8 @@ urlpatterns = [
     path("companies_visited",views.companies_visited,name="companies_visted"),
     path('login/',views.login_view,name="login_view"),
     path('register/',views.register,name="register"),
-    path("logout_page",views.logout_page,name="logout_page")
- 
+    path("logout_page",views.logout_page,name="logout_page"),
+    path("sprofile",views.sprofile,name="sprofile")
+
 ]
 

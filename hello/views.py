@@ -66,3 +66,7 @@ def login_view(request):
 def logout_page(request):
     logout(request)
     return redirect("home")
+
+
+def sprofile(request):
+    return render(request,'hello/sprofile.html')
