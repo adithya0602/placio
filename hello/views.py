@@ -3,14 +3,16 @@ from django.db import models
 from django.shortcuts import render,redirect
 from .forms import SignUpForm,LoginForm
 from django.contrib.auth import authenticate,login,logout
-from django.http import HttpResponseRedirect
-from django.contrib import auth
+from django.contrib.auth.decorators import login_required
+
+@login_required(login_url='login_view')
 def main(request):
     return render(request,"hello/main.html")
 def companyc(request):
     return render(request,"hello/companyc.html")
 def contactus(request):
     return render(request,"hello/contactus.html")
+@login_required(login_url='login_view')
 def main1(request):
     return render(request,"hello/main1.html")
 def index(request):
