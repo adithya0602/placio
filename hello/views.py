@@ -67,6 +67,6 @@ def logout_page(request):
     logout(request)
     return redirect("home")
 
-
+@login_required(login_url='login_view')
 def sprofile(request):
     return render(request,'hello/sprofile.html')
