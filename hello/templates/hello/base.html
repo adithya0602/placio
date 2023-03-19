@@ -47,7 +47,10 @@
                       class="sr-only">(current)</span></a>
           </li>
                   {% if user.is_authenticated %}
-                  
+                  <li class="nav-item active">
+                      <a class="nav-link text-dark" href="{% url 'sprofile' %}">PROFILE
+                          <span class="sr-only">(current)</span></a>
+                  </li>
                   <li class="nav-item">
                       <a class="nav-link text-dark" href="{% url 'logout_page' %}">LOGOUT</a>
                   </li>
