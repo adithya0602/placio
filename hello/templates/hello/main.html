@@ -2,8 +2,8 @@
 {% block title %}main{% endblock title %}
 {% block body %}
 <div class="da">
-    <h1><font color="green" face="arial black">WELCOME TO OUR PORTAL</font></h1>
-    <h1>{{user.username}}</h1>
+    <h1><font color="#151B54" face="arial black">WELCOME TO OUR PORTAL</font></h1>
+    <h1 style="text-transform:uppercase"><font color="black" face="arial black">{{user.username}}</font></h1>
 </div>
 <br><br>
 <div class="container">
@@ -224,11 +224,120 @@
       </li>
     </ul>
   </div>
-<br>
+  <br><br><br>
+  <div class="container">
+    <h2 class="b">ACTIVITIES</h2>
+    <br>
+    <ul class="cards">
+      <li class="card">
+        <div>
+          <h3 class="card-title">INTERNSHIPS</h3>
+          <div class="card-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Apply</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">WORKSHOPS</h3>
+          <div class="card-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae magnam harum natus fuga et repellat in maiores.</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Participate</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">EVENTS</h3>
+          <div class="card-content">
+            <p>Phasellus ultrices lorem vel bibendum ultricies. In hendrerit nulla a ante dapibus pulvinar eu eget quam.</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Participate</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <h3 class="card-title">STUDENT CLUBS</h3>
+          <div class="card-content">
+            <p>Aenean posuere mauris quam, pellentesque auctor mi bibendum nec. Sed scelerisque lacus nisi, quis auctor lorem ornare vel.</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="" class="card-link">Join</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <br><br><br>
+  <div class="po">
+  <a href=""><div class="card11">CODING PRACTICE</div></a>
+  <a href=""><div class="card11">RESUME BUILDER</div></a>
+  </div>
     <style>
+      .po{
+        display:flex;
+      }
+      .card11 {
+        position: relative;
+        width: 500px;
+        height: 320px;
+        margin-right:90px;
+        margin-left:140px;
+        background: skyblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+      
+      .card11::before,
+      .card11::after {
+        position: absolute;
+        content: "";
+        width: 20%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        color:white;
+        font-weight: bold;
+        background-color:#151B54;
+        transition: all 0.5s;
+      }
+      
+      .card11::before {
+        top: 0;
+        right: 0;
+        border-radius: 0 15px 0 100%;
+      }
+      
+      .card11::after {
+        bottom: 0;
+        left: 0;
+        border-radius: 0 100%  0 15px;
+      }
+      
+      .card11:hover::before,
+      .card11:hover:after {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        transition: all 0.5s;
+      }
     .b{
         font-family:arial black;
-        color:green;
+        color:#151B54;
     }
     .da{
         margin:30px;
@@ -282,7 +391,7 @@
         display: flex;
         flex-direction: column;
         padding: 20px;
-        background: orange;
+        background: aliceblue;
         border-radius: 12px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
         scroll-snap-align: start;
@@ -311,7 +420,7 @@
         display: inline-block;
         text-decoration: none;
         color: white;
-        background: green;
+        background:#151B54;
         padding: 6px 12px;
         border-radius: 8px;
         transition: background 0.2s;
@@ -327,7 +436,7 @@
       }
       
       .cards::-webkit-scrollbar-thumb {
-        background: var(--darkorange);
+        background:skyblue;
       }
       
       .cards::-webkit-scrollbar-track {
