@@ -1,6 +1,6 @@
 {% extends 'hello/base.html' %}
 {% block title %}Customer Page{% endblock %}
-
+{% load static %}
 {% block content %}
 <div class="row my-2">
     <div class="col-md-2"></div>
@@ -38,7 +38,11 @@
                     </table>
                 </div>
                 <div class="col-md-4">
+                    {% if user.sprofile.image %}
                     <img class="img-thumbnail" src="{{ user.sprofile.image.url }}" alt="profile-image">
+                    {% else %}
+                    <img src="{% static 'images\peakpx.jpg' %}" heigh="200px" width="200px">
+                    {% endif %}
                 </div>
             </div>
         </div>
