@@ -27,7 +27,9 @@ def placed(request):
     return render(request,"hello/placed.html")
 def stat(request):
     return render(request,"hello/stat.html")
-
+@login_required(login_url='login_view')
+def dsa(request):
+    return render(request,"hello/dsa.html")
 def register(request):
     msg=None
     if request.method=="POST":

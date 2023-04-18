@@ -16,6 +16,7 @@ urlpatterns = [
     path('login/',views.login_view,name="login_view"),
     path('register/',views.register,name="register"),
     path("logout_page",views.logout_page,name="logout_page"),
-    path("sprofile",views.sprofile,name="sprofile")
+    path("sprofile",views.sprofile,name="sprofile"),
+    path("dsa/",views.dsa,name="dsa")
 ]
 
