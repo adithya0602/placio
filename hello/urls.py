@@ -19,6 +19,13 @@ urlpatterns = [
     path("sprofile",views.sprofile,name="sprofile"),
     path("dsa/",views.dsa,name="dsa"),
     path("java/",views.java,name="java"),
-    path("python",views.python,name="python")
+    path("python",views.python,name="python"),
+    path("dbms",views.dbms,name="dbms"),
+    path("c/",views.c,name="c"),
+    path("apt/",views.apt,name="apt"),
+    path("sql",views.sql,name="sql"),
+    path("front",views.front,name="front"),
+    path("back",views.back,name="back"),
+    path("english",views.english,name="english")
 ]
 

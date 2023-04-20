@@ -36,6 +36,27 @@ def java(request):
 @login_required(login_url='login_view')
 def python(request):
     return render(request,"hello/python.html")
+@login_required(login_url='login_view')
+def dbms(request):
+    return render(request,"hello/dbms.html")
+@login_required(login_url='login_view')
+def c(request):
+    return render(request,"hello/c.html")
+@login_required(login_url='login_view')
+def apt(request):
+    return render(request,"hello/apt.html")
+@login_required(login_url='login_view')
+def sql(request):
+    return render(request,"hello/sql.html")
+@login_required(login_url='login_view')
+def front(request):
+    return render(request,"hello/front.html")
+@login_required(login_url='login_view')
+def back(request):
+    return render(request,"hello/back.html")
+@login_required(login_url='login_view')
+def english(request):
+    return render(request,"hello/english.html")
 def register(request):
     msg=None
     if request.method=="POST":
