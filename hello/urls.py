@@ -17,6 +17,8 @@ urlpatterns = [
     path('register/',views.register,name="register"),
     path("logout_page",views.logout_page,name="logout_page"),
     path("sprofile",views.sprofile,name="sprofile"),
-    path("dsa/",views.dsa,name="dsa")
+    path("dsa/",views.dsa,name="dsa"),
+    path("java/",views.java,name="java"),
+    path("python",views.python,name="python")
 ]
 

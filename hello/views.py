@@ -30,6 +30,12 @@ def stat(request):
 @login_required(login_url='login_view')
 def dsa(request):
     return render(request,"hello/dsa.html")
+@login_required(login_url='login_view')
+def java(request):
+    return render(request,"hello/java.html")
+@login_required(login_url='login_view')
+def python(request):
+    return render(request,"hello/python.html")
 def register(request):
     msg=None
     if request.method=="POST":
