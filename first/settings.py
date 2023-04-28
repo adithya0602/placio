@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 AUTH_USER_MODEL='hello.User'
 
 INSTALLED_APPS = [
+    'fontawesomefree',
     'jazzmin',
     'hello.apps.HomeConfig',
     'django.contrib.admin',
