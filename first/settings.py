@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-^mv&=8%30*_t7!lx_anex+tkiut9r(tv0*mf0-3kiur)tvifv9
 DEBUG = True
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 # Application definition
 AUTH_USER_MODEL='hello.User'
 
@@ -136,3 +136,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
