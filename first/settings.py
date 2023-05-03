@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-^mv&=8%30*_t7!lx_anex+tkiut9r(tv0*mf0-3kiur)tvifv9
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['placio-production.up.railway.app']
 # Application definition
 AUTH_USER_MODEL='hello.User'
 
