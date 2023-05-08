@@ -74,6 +74,9 @@ TEMPLATES = [
         },
     },
 ]
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+)
 
 WSGI_APPLICATION = 'first.wsgi.application'
 
