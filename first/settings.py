@@ -28,7 +28,8 @@ SECRET_KEY = 'django-insecure-^mv&=8%30*_t7!lx_anex+tkiut9r(tv0*mf0-3kiur)tvifv9
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["web-production-f033.up.railway.app","chrome-extension://theIDofYourExtension"]
+
 # Application definition
 AUTH_USER_MODEL='hello.User'
 
@@ -57,7 +58,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 CSRF_TRUSTED_ORIGINS = [
-    'https://web-production-f033.up.railway.app/'
+    'web-production-f033.up.railway.app'
 ]
 ROOT_URLCONF = 'first.urls'
 
