@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-^mv&=8%30*_t7!lx_anex+tkiut9r(tv0*mf0-3kiur)tvifv9
 DEBUG = True
 
 
-ALLOWED_HOSTS = ["web-production-f033.up.railway.app","chrome-extension://theIDofYourExtension"]
+ALLOWED_HOSTS = ["web-production-f033.up.railway.app","127.0.0.1","chrome-extension://theIDofYourExtension"]
 
 # Application definition
 AUTH_USER_MODEL='hello.User'
