@@ -25,10 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^mv&=8%30*_t7!lx_anex+tkiut9r(tv0*mf0-3kiur)tvifv9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
-ALLOWED_HOSTS = ["web-production-f033.up.railway.app","127.0.0.1","chrome-extension://theIDofYourExtension"]
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 AUTH_USER_MODEL='hello.User'
@@ -57,9 +57,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CSRF_TRUSTED_ORIGINS = [
-    'https://web-production-f033.up.railway.app/'
-]
 ROOT_URLCONF = 'first.urls'
 
 TEMPLATES = [
@@ -87,16 +84,10 @@ WSGI_APPLICATION = 'first.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': '2cjSDlXUvTNUjknifTdh',
-        'HOST': 'containers-us-west-180.railway.app',
-        'PORT': '6245'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
