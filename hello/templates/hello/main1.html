@@ -5,11 +5,78 @@
     <h1><font color="green" face="arial black">WELCOME TO OUR PORTAL</font></h1>
     <h1 style="text-transform:uppercase"><font color="black" face="arial black">{{user.username}}</font></h1>
 </div>
+<br>
+<br>
+<div class="cardContainer">
+    <div class="card" style="background-color:rgb(153, 29, 224);">
+    <h2 class="q"><a href="" style="color:white">STUDENTS RESUMES</a></h2>
+    </div>
+    <div class="card" style="background-color:rgb(12, 126, 120);">
+    <h2 class="q"><a href="" style="color:white">COLLEGE BROCHURE</a></h2>
+    </div>
+    <div class="card" style="background-color:rgb(207, 41, 91);">
+    <h2 class="q"><a href="" style="color:white">STUDENTS PERFORMANCE ANALYSIS</a></h2>
+    </div>
+    <div class="card" style="background-color:rgb(204, 91, 39);">
+    <h2 class="q"><a href="" style="color:white">PROVIDE FEEDBACK</a></h2>
+    </div>
+    </div><br><br><br>
+    <div class="cardContainer">
+        <div class="card" style="background-color:rgb(153, 29, 224);">
+        <h2 class="q"><a href="" style="color:white">QUALIFIED STUDENTS</a></h2>
+        </div>
+        <div class="card" style="background-color:rgb(12, 126, 120);">
+        <h2 class="q"><a href="" style="color:white">SCHEDULE INTERVIEW</a></h2>
+        </div>
+        <div class="card" style="background-color:rgb(207, 41, 91);">
+        <h2 class="q"><a href="" style="color:white">SCHEDULE PLACEMENT DRIVES</a></h2>
+        </div>
+        <div class="card" style="background-color:rgb(204, 91, 39);">
+        <h2 class="q"><a href="" style="color:white">SCHEDULE PREPLACEMENT TALKS</a></h2>
+        </div>
+        </div>
 <style>
+    a:link{
+        
+        text-decoration:none;
+    }
+    .q{
+        padding:60px;
+        padding-left:90px;
+        font-size:20px;
+    }
     .da{
         margin:30px;
         padding:20px;
         text-align:center;
       }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+     }
+     * {
+        box-sizing: border-box;
+     }
+     .card {
+        color: white;
+        float: left;
+        width: calc(25% - 20px);
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+        height: 200px;
+     }
+     .card p {
+        font-size: 18px;
+     }
+     .cardContainer:after {
+        content: "";
+        display: table;
+        clear: both;
+     }
+     @media screen and (max-width: 600px) {
+        .card {
+           width: 100%;
+        }
+     }
 </style>
 {%endblock body %}
